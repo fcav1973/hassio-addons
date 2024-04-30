@@ -13,8 +13,8 @@ RUN set -x \
  && if [[ "${BUILD_ARCH}" = "armhf" ]]; then ARCH="arm"; fi \
  && if [[ "${BUILD_ARCH}" = "armv7" ]]; then ARCH="arm"; fi \
  && if [[ "${BUILD_ARCH}" = "i386" ]]; then ARCH="386"; fi \
- && curl -Lo /ngrok.zip https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-${ARCH}.zip \
- && unzip -o /ngrok.zip -d /bin \
+ && curl -Lo /ngrok.zip https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-${ARCH}.tgz \
+ && tar xvfz ngrok.zip
  && rm -f /ngrok.zip
 
 # Initialize ngrok
